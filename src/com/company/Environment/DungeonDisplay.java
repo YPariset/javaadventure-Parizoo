@@ -1,6 +1,11 @@
-package com.company;
+package com.company.Environment;
 
-import java.security.Key;
+import com.company.ItemModel.Arm;
+import com.company.ItemModel.ArmType;
+import com.company.ItemModel.Item;
+import com.company.Character.Monster;
+import com.company.Character.MonsterType;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;

@@ -1,4 +1,10 @@
-package com.company;
+package com.company.Game;
+
+import com.company.ItemModel.Arm;
+import com.company.ItemModel.ArmType;
+import com.company.Character.Hero;
+import com.company.Environment.Room;
+import com.company.ItemModel.Item;
 
 import java.util.List;
 import java.util.Scanner;

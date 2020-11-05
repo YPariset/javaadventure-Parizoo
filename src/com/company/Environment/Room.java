@@ -1,4 +1,7 @@
-package com.company;
+package com.company.Environment;
+
+import com.company.ItemModel.Item;
+import com.company.Character.Monster;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +14,7 @@ public class Room {
     protected boolean roomExist;
     protected Map<Integer, Room> doors = new HashMap<Integer, Room>();
     protected boolean locked;
-    protected Item tresor;
+    public Item tresor;
 
     public Room(int id) {
         this.id = id;

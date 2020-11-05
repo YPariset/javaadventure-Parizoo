@@ -1,4 +1,6 @@
-package com.company;
+package com.company.Environment;
+
+import com.company.Character.Hero;
 
 import java.util.HashMap;
 import java.util.Map;

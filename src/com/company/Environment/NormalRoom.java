@@ -1,4 +1,7 @@
-package com.company;
+package com.company.Environment;
+
+import com.company.ItemModel.Item;
+import com.company.Character.Monster;
 
 public class NormalRoom extends Room {
     public NormalRoom(int id) {

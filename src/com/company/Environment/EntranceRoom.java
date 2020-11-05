@@ -1,4 +1,6 @@
-package com.company;
+package com.company.Environment;
+
+import com.company.Character.Monster;
 
 public class EntranceRoom extends Room {
     public EntranceRoom(int id) {

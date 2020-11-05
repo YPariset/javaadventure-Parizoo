@@ -1,4 +1,7 @@
-package com.company;
+package com.company.Game;
+
+import com.company.Character.Hero;
+import com.company.Character.Monster;
 
 public class Fight {
     protected Monster monster;

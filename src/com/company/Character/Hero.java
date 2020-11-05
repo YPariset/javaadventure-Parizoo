@@ -1,5 +1,12 @@
-package com.company;
+package com.company.Character;
 
+
+import com.company.ItemModel.Arm;
+import com.company.ItemModel.ArmType;
+import com.company.Game.CommandPrompt;
+import com.company.Environment.Room;
+import com.company.Game.Fight;
+import com.company.ItemModel.Item;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -178,9 +185,9 @@ public class Hero extends Character implements Fighter {
     }
 
     /**
-     * attack is the function to attack an other Character
+     * attack is the function to attack an other com.company.Character.Character
      *
-     * @param c the Character to attack
+     * @param c the com.company.Character.Character to attack
      */
     @Override
     public void attack(Character c) {
@@ -200,7 +207,7 @@ public class Hero extends Character implements Fighter {
         situation += "He has in his bag :\n\n";
         int idItem = 0;
         for (Item i: this.bag) {
-            if (i.getName().equals("Arm")) {
+            if (i.getName().equals("com/company/ItemModel")) {
                 Arm arm = (Arm) i;
                 situation += idItem + " -> " +  arm.getName() + " (AttackPoints: " + arm.getAttackPoints() + ")\n";
                 idItem++;

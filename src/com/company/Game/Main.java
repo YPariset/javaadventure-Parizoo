@@ -1,4 +1,10 @@
-package com.company;
+package com.company.Game;
+
+import com.company.Game.CommandPrompt;
+import com.company.ItemModel.ArmType;
+import com.company.Character.Hero;
+import com.company.Environment.Dungeon;
+import com.company.Environment.DungeonDisplay;
 
 public class Main {
 
@@ -6,7 +12,7 @@ public class Main {
 
         DungeonDisplay generator;
         CommandPrompt commandPrompt = new CommandPrompt();
-        Dungeon dungeon = new Dungeon();
+        Dungeon dungeon;
 
         System.out.println("----------------------------------");
         System.out.println("\n WELCOME TO THE DUNGEON MASTER");
@@ -16,12 +22,11 @@ public class Main {
         generator.createClassicMap(1);
 
         dungeon = new Dungeon(generator.getMap(), generator.getIdMax());
-        dungeon.setPlayer(commandPrompt.createHero(dungeon.getDungeonMap().get(0),ArmType.SWORD, ArmType.WATER_FLASK));
+        dungeon.setPlayer(commandPrompt.createHero(dungeon.getDungeonMap().get(0), ArmType.SWORD, ArmType.WATER_FLASK));
 
         System.out.println("\nHey here we go ! For the moment this game has only one level with 5 rooms to discover!");
         System.out.println("Be careful of the sorcerer and barbarians and don't hesitate to go all the way, you might get a surprise !\n");
 
-        //dungeon.showMap();
 
         do {
             dungeon.getHero().enterInRoom();

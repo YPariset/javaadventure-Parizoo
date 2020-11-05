@@ -1,4 +1,4 @@
-package com.company;
+package com.company.ItemModel;
 
 public class Arm extends Item {
 

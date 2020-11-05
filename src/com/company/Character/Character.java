@@ -1,4 +1,6 @@
-package com.company;
+package com.company.Character;
+
+import com.company.ItemModel.ArmType;
 
 public class Character {
     protected int lifePoints;

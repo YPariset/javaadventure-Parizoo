@@ -1,4 +1,6 @@
-package com.company;
+package com.company.Character;
+
+import com.company.ItemModel.ArmType;
 
 public class Monster extends Character implements Fighter {
 
@@ -11,9 +13,9 @@ public class Monster extends Character implements Fighter {
     }
 
     /**
-     * attack is the function to attack an other Character
+     * attack is the function to attack an other com.company.Character.Character
      *
-     * @param c the Character to attack
+     * @param c the com.company.Character.Character to attack
      */
     @Override
     public void attack(Character c) {
