@@ -1,5 +1,6 @@
 package com.company.Environment;
 
+import com.company.Character.MonsterType;
 import com.company.ItemModel.Item;
 import com.company.Character.Monster;
 
@@ -11,6 +12,7 @@ public class Room {
     protected int id;
     protected String description;
     protected Monster monster;
+    protected MonsterType monsterType;
     protected boolean roomExist;
     protected Map<Integer, Room> doors = new HashMap<Integer, Room>();
     protected boolean locked;
@@ -24,6 +26,11 @@ public class Room {
     public Room(int id, Monster monster) {
         this.id = id;
         this.monster = monster;
+    }
+
+    public Room(int id, MonsterType monsterType) {
+        this.id = id;
+        this.monsterType = monsterType;
     }
 
     /**
@@ -55,6 +62,10 @@ public class Room {
 
     public Monster getMonster() {
         return monster;
+    }
+
+    public MonsterType getMonsterType() {
+        return monsterType;
     }
 
     public void setMonster(Monster monster) {

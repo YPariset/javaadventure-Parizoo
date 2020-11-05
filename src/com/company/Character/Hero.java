@@ -129,7 +129,9 @@ public class Hero extends Character implements Fighter {
         if(this.currentRoom.getTresor() != null) {
             this.bag.add(this.currentRoom.tresor);
             System.out.println("Congratulations You found the " + this.currentRoom.getTresor().getName() + ", :)\n");
-            System.out.println("You're the master of donjon !");
+            System.out.println(this.currentRoom.tresor.getDescription());
+            System.out.println("You're now the master of donjon !");
+            System.exit(1);
             this.currentRoom.setTresor(null);
         } else {
             System.out.println("There's no item in this room.\n");
@@ -194,7 +196,7 @@ int n = 0;
     @Override
     public void attack(Character c) {
         System.out.println("------------------\n");
-        System.out.println(this.name + " attack the monster with " + this.arm);
+        System.out.println(this.name + " attack the monster with his arm");
         c.setLifePoints(c.getLifePoints() - this.attackPoints);
         System.out.println("Now, the monster has " + c.getLifePoints() + " lifepoints.");
         System.out.println();

@@ -109,15 +109,13 @@ public class DungeonDisplay {
 
         Monster sorcerer = new Monster(MonsterType.SORCERER, ArmType.SORT_LIGHTNING );
         Monster barbarian = new Monster(MonsterType.BARBARIAN, ArmType.ACE );
-        Arm ace = new Arm(ArmType.ACE);
-        Arm lightning = new Arm(ArmType.SORT_LIGHTNING);
         Item tresor = new Item("*** - The tresor of God Parizoo - ***","That contains all the happiness that your need in your life");
 
         if (level == 1) {
             Room room0 = new EntranceRoom(0,barbarian);
             Room room1 = new NormalRoom(1, sorcerer);
             Room room2 = new NormalRoom(2, barbarian);
-            Room room3 = new NormalRoom(3, barbarian);
+            Room room3 = new NormalRoom(3, barbarian);   //MonsterType.getRandomMonster()
             Room room4 = new NormalRoom(4, sorcerer);
             Room room5 = new NormalRoom(5, tresor);
             room5.setTresor(tresor);
@@ -152,14 +150,6 @@ public class DungeonDisplay {
 
     public int getIdMax() {
         return idMax;
-    }
-
-    public Map<Integer, Room> getDungeonMap() {
-        return dungeonMap;
-    }
-
-    public void setDungeonMap(Map<Integer, Room> dungeonMap) {
-        this.dungeonMap = dungeonMap;
     }
 
     public Map<Integer, Room> getMap() {

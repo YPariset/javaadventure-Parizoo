@@ -1,5 +1,6 @@
 package com.company.Environment;
 
+import com.company.Character.MonsterType;
 import com.company.ItemModel.Item;
 import com.company.Character.Monster;
 
@@ -22,4 +23,8 @@ public class NormalRoom extends Room {
     }
 
 
+    public NormalRoom(int id, MonsterType randomMonster) {
+        super(id, randomMonster);
+        this.monsterType = randomMonster;
+    }
 }

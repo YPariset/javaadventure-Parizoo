@@ -1,6 +1,10 @@
 package com.company.Character;
 
+
 import com.company.ItemModel.ArmType;
+
+import java.util.Arrays;
+import java.util.Random;
 
 public enum MonsterType {
     BARBARIAN("Barbarian", 50, ArmType.ACE.getAttackPoints()),
@@ -15,6 +19,14 @@ public enum MonsterType {
         this.type = type;
         this.lifePoints = lifePoints;
         this.attackPoints = attackPoints;
+    }
+
+    private static final MonsterType[] VALUES = values();
+    private static final int SIZE = VALUES.length;
+    private static final Random RANDOM = new Random();
+
+    public static MonsterType getRandomMonster()  {
+        return VALUES[RANDOM.nextInt(SIZE)];
     }
 
     public String toString() {
@@ -32,6 +44,9 @@ public enum MonsterType {
     public int getAttackPoints() {
         return attackPoints;
     }
+
+
+
 
 
 }
