@@ -1,19 +1,18 @@
 package com.company;
 
 public enum MonsterType {
-    BARBARIAN("Barbarian", 50, 5, ArmType.ACE),
-    SORCERER("Sorcerer", 40, 8, ArmType.SORT_LIGHTNING);
+    BARBARIAN("Barbarian", 50, ArmType.ACE.getAttackPoints()),
+    SORCERER("Sorcerer", 40, ArmType.SORT_LIGHTNING.getAttackPoints());
 
     private String type;
     private int lifePoints;
     private int attackPoints;
-    private ArmType arm;
 
-    MonsterType(String type, int lifePoints, int attackPoints, ArmType arm) {
+
+    MonsterType(String type, int lifePoints, int attackPoints) {
         this.type = type;
         this.lifePoints = lifePoints;
         this.attackPoints = attackPoints;
-        this.arm = arm;
     }
 
     public String toString() {
@@ -32,8 +31,5 @@ public enum MonsterType {
         return attackPoints;
     }
 
-    public ArmType getArm() {
-        return arm;
-    }
 
 }

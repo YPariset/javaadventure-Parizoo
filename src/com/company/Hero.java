@@ -11,7 +11,7 @@ public class Hero extends Character implements Fighter {
     protected List<Item> bag;
 
     public Hero(String name, Room currentRoom) {
-        super(100, 10);
+        super(100, ArmType.SWORD.getAttackPoints());
         this.name = name;
         this.currentRoom = currentRoom;
         this.bag = new ArrayList<Item>();
@@ -126,6 +126,8 @@ public class Hero extends Character implements Fighter {
         }
     }
 
+
+
     /**
      * The function is called when the player wants to hit a Monster in a Room
      *
@@ -138,6 +140,9 @@ public class Hero extends Character implements Fighter {
 
                 if(idArm == 0) {
                     this.attackPoints = 10;
+                    new Fight(this.currentRoom.getMonster(), this).goFight();
+                } else if(idArm == 1) {
+                    this.attackPoints = 2;
                     new Fight(this.currentRoom.getMonster(), this).goFight();
                 } else if(idArm < this.bag.size()+1 && idArm > 0) {
                     try {

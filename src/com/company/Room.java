@@ -30,7 +30,7 @@ public class Room {
     public void showNeighbours() {
         System.out.print("This door will lead to rooms : ");
         for (Map.Entry<Integer, Room> e : doors.entrySet())
-            System.out.print(e.getKey() + ", \n");
+            System.out.print(e.getKey() + ", ");
         System.out.println();
     }
 
