@@ -17,6 +17,7 @@ public class Main {
         System.out.println("----------------------------------");
         System.out.println("\n WELCOME TO THE DUNGEON MASTER");
         System.out.println("     Created by Parizoo \n");
+        System.out.println("              ☠️ \n");
 
         generator = new DungeonDisplay();
         generator.createClassicMap(1);

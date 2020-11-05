@@ -105,13 +105,12 @@ public class Hero extends Character implements Fighter {
      * This function is called when the user wants to show the help menu of the game
      */
     public void showHelpMenu() {
-        System.out.println("describe : To show the description of the current room.");
         System.out.println("go <idRoom> : To navigate in another room.");
-        System.out.println("help : Here you are.");
         System.out.println("hit : To hit the monster in the current room.");
-        System.out.println("quit : To quit the game.");
-        System.out.println("situation : To show the life point and the bag of the player.");
         System.out.println("take : To take the tresor  of the last room.");
+        System.out.println("situation : To show the life point and the bag of the player.");
+        System.out.println("help : Here you are.");
+        System.out.println("quit : To quit the game.");
         System.out.println();
     }
 
@@ -147,7 +146,7 @@ public class Hero extends Character implements Fighter {
         }
     }*/             ////Voir avec DOM
 
-
+int n = 0;
 
     /**
      * The function is called when the player wants to hit a Monster in a Room
@@ -162,8 +161,8 @@ public class Hero extends Character implements Fighter {
                 if(idArm == 0) {
                     this.attackPoints = 10;
                     new Fight(this.currentRoom.getMonster(), this).goFight();
-                } else if(idArm == 1) {
-                    this.attackPoints = 2;
+                } else if(idArm == 1) { 
+                    n(n+2);
                     new Fight(this.currentRoom.getMonster(), this).goFight();
                 } else if(idArm < this.bag.size()+1 && idArm > 0) {
                     try {
@@ -182,6 +181,9 @@ public class Hero extends Character implements Fighter {
         } else {
             System.out.println("There's no monster in this room.");
         }
+    }
+
+    private void n(int i) {
     }
 
     /**

@@ -29,7 +29,7 @@ public class CommandPrompt {
         int compteur = 0;
         System.out.println(compteur + " -> Sword (attackPoints: 10)");
         compteur++;
-        System.out.println(compteur + " -> Water_Flask (attackPoints: 2)");
+        System.out.println(compteur + " -> Water_Flask (attackPoints: n(n+2)");
         for(Item i: bag) {
             if (i.getName().equals("Sword") || i.getName().equals("Water_Flask")) {
                 Arm arm = (Arm) i;
@@ -47,6 +47,7 @@ public class CommandPrompt {
      *
      * @param currentRoom
      * @param arm
+     * @param arm2
      * @return a new Player
      */
     public Hero createHero(Room currentRoom, ArmType arm, ArmType arm2) {
@@ -68,13 +69,7 @@ public class CommandPrompt {
         System.out.println("------------------------------");
         System.out.println("   What do you want to do ?  ");
         System.out.println("------------------------------\n\n");
-        System.out.println("describe : To show the description of the current room.\n" +
-                "go <idRoom> : To navigate in another room.\n" +
-                "help : Here you are.\n" +
-                "hit : To hit the monster in the current room.\n" +
-                "quit : To quit the game.\n" +
-                "situation : To show the life point and the bag of the player.\n" +
-                "take : To take the tresor  of the last room.\n\n");
+        hero.showHelpMenu();
         System.out.print("> ");
         String command = sc.nextLine();
         System.out.println("----------------------\n");
