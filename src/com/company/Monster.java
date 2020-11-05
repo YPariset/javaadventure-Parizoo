@@ -4,9 +4,10 @@ public class Monster extends Character implements Fighter {
 
     MonsterType type;
 
-    public Monster(MonsterType type) {
+    public Monster(MonsterType type, ArmType arm) {
         super(type.getLifePoints(), type.getAttackPoints());
         this.type = type;
+        this.arm = arm;
     }
 
     /**

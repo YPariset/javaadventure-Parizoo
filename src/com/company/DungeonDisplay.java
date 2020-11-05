@@ -31,14 +31,14 @@ public class DungeonDisplay {
 
 
         if (randomInt < 5) {
-            m = new Monster(MonsterType.BARBARIAN);
+            m = new Monster(MonsterType.BARBARIAN, ArmType.ACE);
             {
-                m = new Monster(MonsterType.SORCERER);
+                m = new Monster(MonsterType.SORCERER, ArmType.SORT_LIGHTNING);
                 return new NormalRoom(randomInt, m);
             }
         } else if (randomInt == 5) {
-            m = new Monster(MonsterType.BARBARIAN);
-            m = new Monster(MonsterType.SORCERER);
+            m = new Monster(MonsterType.BARBARIAN, ArmType.ACE);
+            m = new Monster(MonsterType.SORCERER, ArmType.SORT_LIGHTNING);
             return new NormalRoom(randomInt, t);
         } else {
             m = null;
@@ -102,8 +102,8 @@ public class DungeonDisplay {
      */
     public void createClassicMap(int level) {
 
-        Monster sorcerer = new Monster(MonsterType.SORCERER);
-        Monster barbarian = new Monster(MonsterType.BARBARIAN);
+        Monster sorcerer = new Monster(MonsterType.SORCERER, ArmType.SORT_LIGHTNING );
+        Monster barbarian = new Monster(MonsterType.BARBARIAN, ArmType.ACE );
         Arm ace = new Arm(ArmType.ACE);
         Arm lightning = new Arm(ArmType.SORT_LIGHTNING);
         Item tresor = new Item("*** - The tresor of God Parizoo - ***","That contains all the happiness that your need in your life");

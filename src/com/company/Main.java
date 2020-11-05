@@ -8,14 +8,15 @@ public class Main {
         CommandPrompt commandPrompt = new CommandPrompt();
         Dungeon dungeon = new Dungeon();
 
-        System.out.println("----------------------");
-        System.out.println("\n WELCOME TO THE DUNGEON MASTER\n");
+        System.out.println("----------------------------------");
+        System.out.println("\n WELCOME TO THE DUNGEON MASTER");
+        System.out.println("     Created by Parizoo \n");
 
         generator = new DungeonDisplay();
         generator.createClassicMap(1);
 
         dungeon = new Dungeon(generator.getMap(), generator.getIdMax());
-        dungeon.setPlayer(commandPrompt.createHero(dungeon.getDungeonMap().get(0)));
+        dungeon.setPlayer(commandPrompt.createHero(dungeon.getDungeonMap().get(0),ArmType.SWORD, ArmType.WATER_FLASK));
 
         System.out.println("\nHey here we go ! For the moment this game has only one level with 5 rooms to discover!");
         System.out.println("Be careful of the sorcerer and barbarians and don't hesitate to go all the way, you might get a surprise !\n");
@@ -34,7 +35,7 @@ public class Main {
                 generator = new DungeonDisplay();
                 generator.createRandomMap();
                 dungeon = new Dungeon(generator.getMap(), generator.getIdMax());
-                savePlayer.setCurrentRoom(dungeon.getDungeonMap().get(0));
+                savePlayer.setCurrentRoom(dungeon.getDungeonMap().get(5));
 
                 dungeon.setPlayer(savePlayer);
                 dungeon.showMap();

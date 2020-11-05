@@ -9,12 +9,16 @@ public class Hero extends Character implements Fighter {
     protected String name;
     protected Room currentRoom;
     protected List<Item> bag;
+    protected ArmType arm;
 
-    public Hero(String name, Room currentRoom) {
+
+    public Hero(String name, Room currentRoom, ArmType arm, ArmType arm2) {
         super(100, ArmType.SWORD.getAttackPoints());
         this.name = name;
         this.currentRoom = currentRoom;
         this.bag = new ArrayList<Item>();
+        this.arm = arm;
+        this.arm = arm2;
 
     }
 
@@ -125,6 +129,16 @@ public class Hero extends Character implements Fighter {
             System.out.println("There's no item in this room.\n");
         }
     }
+
+    /*
+    int count = 0;
+
+    public void flaskBonus() {
+        for (int i = 2; i < 10; i += 2) {
+            count += i;;
+            System.out.println(count);
+        }
+    }*/             ////Voir avec DOM
 
 
 

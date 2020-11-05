@@ -18,7 +18,7 @@ public class CommandPrompt {
      */
     public String chooseArm(List<Item> bag) {
 
-        System.out.println("----------------------\n");
+        System.out.println("------------------------------\n");
         System.out.println("Which arm do you want for this fight ?\n");
         int compteur = 0;
         System.out.println(compteur + " -> Sword (attackPoints: 10)");
@@ -40,14 +40,15 @@ public class CommandPrompt {
      * This function is called when the program create a player for a new game
      *
      * @param currentRoom
+     * @param arm
      * @return a new Player
      */
-    public Hero createHero(Room currentRoom) {
-        System.out.println("----------------------\n");
+    public Hero createHero(Room currentRoom, ArmType arm, ArmType arm2) {
+        System.out.println("----------------------------------\n");
         System.out.println("What is your name ?");
         System.out.print("> ");
         String name = sc.nextLine();
-        return new Hero(name, currentRoom);
+        return new Hero(name, currentRoom, arm, arm2);
     }
 
 
