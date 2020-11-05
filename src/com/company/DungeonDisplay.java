@@ -129,20 +129,18 @@ public class DungeonDisplay {
 
             room1.getDoors().put(room0.getId(), room0);
             room1.getDoors().put(room2.getId(), room2);
-            room1.getDoors().put(room3.getId(), room3);
 
             room2.getDoors().put(room1.getId(), room1);
-            room2.getDoors().put(room4.getId(), room4);
+            room2.getDoors().put(room3.getId(), room3);
 
-            room3.getDoors().put(room1.getId(), room1);
+            room3.getDoors().put(room2.getId(), room2);
+            room3.getDoors().put(room4.getId(), room4);
 
-            room4.getDoors().put(room2.getId(), room2);
+            room4.getDoors().put(room3.getId(), room3);
             room4.getDoors().put(room5.getId(), room5);
 
 
-            room5.getDoors().put(room1.getId(), room1);
             room5.getDoors().put(room4.getId(), room4);
-            room5.getDoors().put(room5.getId(), room5);
 
         }
         }

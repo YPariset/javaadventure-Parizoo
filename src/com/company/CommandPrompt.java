@@ -17,6 +17,7 @@ public class CommandPrompt {
      * @return answer
      */
     public String chooseArm(List<Item> bag) {
+
         System.out.println("----------------------\n");
         System.out.println("Which arm do you want for this fight ?\n");
         int compteur = 0;

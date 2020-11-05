@@ -11,7 +11,7 @@ public class Hero extends Character implements Fighter {
     protected List<Item> bag;
 
     public Hero(String name, Room currentRoom) {
-        super(100, 10,ArmType.SWORD);
+        super(100, 10);
         this.name = name;
         this.currentRoom = currentRoom;
         this.bag = new ArrayList<Item>();
