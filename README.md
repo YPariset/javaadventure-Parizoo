@@ -23,6 +23,6 @@ Good luck, and don't forget:          Something wait for you if you survive 🎁
 
 -----------------------------------------------------------------------------------------------------------------------
 
-BUG 🤬
+🤬 BUG
 
 ∙ Thread doesn't appear after the room 1, there is no real fight again
