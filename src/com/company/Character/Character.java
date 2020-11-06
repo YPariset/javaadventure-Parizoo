@@ -5,7 +5,6 @@ import com.company.ItemModel.ArmType;
 public class Character {
     protected int lifePoints;
     protected int attackPoints;
-    protected ArmType arm;
 
     public Character(int lifePoints, int attackPoints) {
         this.lifePoints = lifePoints;

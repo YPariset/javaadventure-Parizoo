@@ -29,10 +29,6 @@ public enum MonsterType {
         return type;
     }
 
-    public String getType() {
-        return type;
-    }
-
     public String getNameOfArm() { return arm; }
 
     public int getLifePoints() {

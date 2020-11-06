@@ -64,13 +64,6 @@ public class Room {
         return monster;
     }
 
-    public MonsterType getMonsterType() {
-        return monsterType;
-    }
-
-    public void setMonster(Monster monster) {
-        this.monster = monster;
-    }
 
     public Item getTresor() {
         return tresor;
@@ -84,9 +77,6 @@ public class Room {
         return locked;
     }
 
-    public void setLocked(boolean locked) {
-        this.locked = locked;
-    }
 
     public boolean isRoomExist() {
         return roomExist;

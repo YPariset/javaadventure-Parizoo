@@ -13,7 +13,6 @@ import java.util.Random;
 
 public class DungeonDisplay {
     protected int idMax;
-    protected boolean hasExit;
     private Map<Integer, Room> dungeonMap = new HashMap<Integer, Room>();
     private Map<Integer, Room> tmpMap = new HashMap<Integer, Room>();
 
@@ -113,8 +112,6 @@ public class DungeonDisplay {
         Monster randomMonster3 = new Monster(Monster.getRandomMonster());
         Monster randomMonster4 = new Monster(Monster.getRandomMonster());
 
-        Monster barbarian = new Monster(MonsterType.BARBARIAN);
-        Monster sorcerer = new Monster(MonsterType.SORCERER);
 
         Item tresor = new Item("*** - The tresor of God Parizoo - ***","That contains all the happiness that your need in your life");
 
@@ -160,14 +157,6 @@ public class DungeonDisplay {
 
     public int getIdMax() {
         return idMax;
-    }
-
-    public Map<Integer, Room> getDungeonMap() {
-        return dungeonMap;
-    }
-
-    public void setDungeonMap(Map<Integer, Room> dungeonMap) {
-        this.dungeonMap = dungeonMap;
     }
 
 
