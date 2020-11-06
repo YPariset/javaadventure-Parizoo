@@ -106,11 +106,10 @@ public class DungeonDisplay {
      */
     public void createClassicMap(int level) {
 
-        Monster randomMonster = new Monster(Monster.getRandomMonster());
-        Monster randomMonster1 = new Monster(Monster.getRandomMonster());
-        Monster randomMonster2 = new Monster(Monster.getRandomMonster());
-        Monster randomMonster3 = new Monster(Monster.getRandomMonster());
-        Monster randomMonster4 = new Monster(Monster.getRandomMonster());
+        Monster[] a_RandomMonster = new Monster[6];
+        for (int i=0; i<6; i++) {
+            a_RandomMonster [i] = new Monster(Monster.getRandomMonster());
+        }
 
 
         Item tresor = new Item("*** - The tresor of God Parizoo - ***","That contains all the happiness that your need in your life");
@@ -118,11 +117,11 @@ public class DungeonDisplay {
         if (level == 1) {
 
             Room room0 = new EntranceRoom(0, null);
-            Room room1 = new NormalRoom(1, randomMonster);
-            Room room2 = new NormalRoom(2, randomMonster1);
-            Room room3 = new NormalRoom(3, randomMonster2);
-            Room room4 = new NormalRoom(4, randomMonster3);
-            Room room5 = new NormalRoom(5, randomMonster4);
+            Room room1 = new NormalRoom(1, a_RandomMonster[1]);
+            Room room2 = new NormalRoom(2, a_RandomMonster[2]);
+            Room room3 = new NormalRoom(3, a_RandomMonster[3]);
+            Room room4 = new NormalRoom(4, a_RandomMonster[4]);
+            Room room5 = new NormalRoom(5, a_RandomMonster[5]);
             room5.setTresor(tresor);
 
 
