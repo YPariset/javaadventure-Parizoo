@@ -25,4 +25,4 @@ Good luck, and don't forget:          Something wait for you if you survive 🎁
 
 🤬 BUG
 
-∙ T̶h̶r̶e̶a̶d̶ ̶d̶o̶e̶s̶n̶'̶t̶ ̶a̶p̶p̶e̶a̶r̶ ̶a̶f̶t̶e̶r̶ ̶t̶h̶e̶ ̶r̶o̶o̶m̶ ̶1̶,̶ ̶t̶h̶e̶r̶e̶ ̶i̶s̶ ̶n̶o̶ ̶r̶e̶a̶l̶ ̶f̶i̶g̶h̶t̶ ̶a̶g̶a̶i̶n̶ -- solution = multipe object randomMonster (not elegant, but works)
+∙ T̶h̶r̶e̶a̶d̶ ̶d̶o̶e̶s̶n̶'̶t̶ ̶a̶p̶p̶e̶a̶r̶ ̶a̶f̶t̶e̶r̶ ̶t̶h̶e̶ ̶r̶o̶o̶m̶ ̶1̶,̶ ̶t̶h̶e̶r̶e̶ ̶i̶s̶ ̶n̶o̶ ̶r̶e̶a̶l̶ ̶f̶i̶g̶h̶t̶ ̶a̶g̶a̶i̶n̶ -- solution = Create multipe object randomMonster via Array and boucle for
