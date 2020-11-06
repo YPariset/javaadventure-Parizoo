@@ -16,6 +16,6 @@ Good luck, and don't forget:          Something wait for you if you survive 🎁
 
 ∙ Implement Paralized state & Critical hit (method already created in Fight Class)
 
-∙ Implement Random Monster (method already created in MonsterType Class)
+∙  ̶I̶m̶p̶l̶e̶m̶e̶n̶t̶ ̶R̶a̶n̶d̶o̶m̶ ̶M̶o̶n̶s̶t̶e̶r̶ ̶(̶m̶e̶t̶h̶o̶d̶ ̶a̶l̶r̶e̶a̶d̶y̶ ̶c̶r̶e̶a̶t̶e̶d̶ ̶i̶n̶ ̶M̶o̶n̶s̶t̶e̶r̶T̶y̶p̶e̶ ̶C̶l̶a̶s̶s̶)̶
 
 ∙ Restriction arm choosed compared to monster
