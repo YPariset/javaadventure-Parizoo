@@ -14,8 +14,8 @@ Good luck, and don't forget:          Something wait for you if you survive 🎁
 
 ☞ ROADMAP
 
-∙ Implement Paralized state (method already created)
+∙ Implement Paralized state & Critical hit (method already created in Fight Class)
 
-∙ Implement Random Monster (method already created)
+∙ Implement Random Monster (method already created in MonsterType Class)
 
 ∙ Restriction arm choosed compared to monster
