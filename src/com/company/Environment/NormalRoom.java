@@ -5,10 +5,6 @@ import com.company.ItemModel.Item;
 import com.company.Character.Monster;
 
 public class NormalRoom extends Room {
-    public NormalRoom(int id) {
-        super(id);
-        this.name = "Normal";
-    }
 
     public NormalRoom(int id, Monster m) {
         super(id, m);

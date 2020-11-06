@@ -16,6 +16,8 @@ package com.company.ItemModel;
             this.attackPoints = attackPoints;
         }
 
+
+
         public String getName() {
             return name;
         }

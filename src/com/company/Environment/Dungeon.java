@@ -7,7 +7,6 @@ import java.util.Map;
 
 public class Dungeon {
 
-    private boolean hasExit;
     private Map<Integer, Room> dungeonMap;
     private Hero hero;
     private int totalRooms;
@@ -19,6 +18,7 @@ public class Dungeon {
     public Dungeon(Map<Integer, Room> dungeonMap, int totalRooms) {
         this.dungeonMap = dungeonMap;
         this.totalRooms = totalRooms;
+
     }
 
     /**
@@ -75,10 +75,6 @@ public class Dungeon {
         this.hero = hero;
     }
 
-    public boolean isHasExit() {
-        return hasExit;
-    }
-
     public Map<Integer, Room> getDungeonMap() {
         return dungeonMap;
     }
@@ -87,7 +83,4 @@ public class Dungeon {
         return hero;
     }
 
-    public int getTotalRooms() {
-        return totalRooms;
-    }
 }

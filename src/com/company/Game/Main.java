@@ -12,12 +12,12 @@ public class Main {
 
         DungeonDisplay generator;
         CommandPrompt commandPrompt = new CommandPrompt();
-        Dungeon dungeon;
+        Dungeon dungeon = new Dungeon();
 
         System.out.println("----------------------------------");
         System.out.println("\n WELCOME TO THE DUNGEON MASTER");
         System.out.println("     Created by Parizoo \n");
-        System.out.println("              ☠️ \n");
+        System.out.println("              😈 \n");
 
         generator = new DungeonDisplay();
         generator.createClassicMap(1);

@@ -32,24 +32,24 @@ public class DungeonDisplay {
     public Room randomRoom(int id, Room oldRoom) {
         Monster m;
         Item t = null;
-        int randomInt = new Random().nextInt(5);
+        int randomInt = new Random().nextInt(1);
 
 
         if (randomInt < 5) {
-            m = new Monster(MonsterType.BARBARIAN, ArmType.ACE);
-            {
-                m = new Monster(MonsterType.SORCERER, ArmType.SORT_LIGHTNING);
+            m = new Monster(MonsterType.BARBARIAN);
+                m = new Monster(MonsterType.SORCERER);
                 return new NormalRoom(randomInt, m);
-            }
         } else if (randomInt == 5) {
-            m = new Monster(MonsterType.BARBARIAN, ArmType.ACE);
-            m = new Monster(MonsterType.SORCERER, ArmType.SORT_LIGHTNING);
-            return new NormalRoom(randomInt, t);
+            m = new Monster(MonsterType.BARBARIAN);
+            m = new Monster(MonsterType.SORCERER);
+                return new NormalRoom(randomInt, t);
         } else {
-            m = null;
+            m = new Monster(MonsterType.BARBARIAN);
+            m = new Monster(MonsterType.SORCERER);
         }
         return new NormalRoom(randomInt, m);
     }
+
 
 
     /**
@@ -107,17 +107,17 @@ public class DungeonDisplay {
      */
     public void createClassicMap(int level) {
 
-        Monster sorcerer = new Monster(MonsterType.SORCERER, ArmType.SORT_LIGHTNING );
-        Monster barbarian = new Monster(MonsterType.BARBARIAN, ArmType.ACE );
+        Monster randomMonster = new Monster(Monster.getRandomMonster());
+
         Item tresor = new Item("*** - The tresor of God Parizoo - ***","That contains all the happiness that your need in your life");
 
         if (level == 1) {
-            Room room0 = new EntranceRoom(0,barbarian);
-            Room room1 = new NormalRoom(1, sorcerer);
-            Room room2 = new NormalRoom(2, barbarian);
-            Room room3 = new NormalRoom(3, barbarian);   //MonsterType.getRandomMonster()
-            Room room4 = new NormalRoom(4, sorcerer);
-            Room room5 = new NormalRoom(5, tresor);
+            Room room0 = new EntranceRoom(0, randomMonster);
+            Room room1 = new NormalRoom(1, randomMonster);
+            Room room2 = new NormalRoom(2, randomMonster);
+            Room room3 = new NormalRoom(3, randomMonster);
+            Room room4 = new NormalRoom(4, randomMonster);
+            Room room5 = new NormalRoom(5, randomMonster);
             room5.setTresor(tresor);
 
             this.dungeonMap.put(0, room0);
@@ -151,6 +151,15 @@ public class DungeonDisplay {
     public int getIdMax() {
         return idMax;
     }
+
+    public Map<Integer, Room> getDungeonMap() {
+        return dungeonMap;
+    }
+
+    public void setDungeonMap(Map<Integer, Room> dungeonMap) {
+        this.dungeonMap = dungeonMap;
+    }
+
 
     public Map<Integer, Room> getMap() {
         return dungeonMap;

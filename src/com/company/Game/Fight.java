@@ -2,6 +2,9 @@ package com.company.Game;
 
 import com.company.Character.Hero;
 import com.company.Character.Monster;
+import com.company.Character.MonsterType;
+
+import java.util.Random;
 
 public class Fight {
     protected Monster monster;
@@ -33,6 +36,21 @@ public class Fight {
         if (!this.hero.isAlive() & this.monster.isAlive()) {
             System.out.println("\nOh no ! The monster has just killed you...\n");
         }
+
+           /* if (this.monster.equals(MonsterType.BARBARIAN)) {
+                Random random = new Random();
+                int choice = random.nextInt( 100 );
+                System.out.println( this.monster + " is hitting you with an axe" );
+                if (choice <= 30)
+                    System.out.println( "...Critical hit!!! you have been damage twice" );
+            } else if (this.monster.equals( MonsterType.SORCERER)) {
+                Random random = new Random();
+                int choice = random.nextInt( 100 );
+                System.out.println( this.monster + " launching a strike of a lightning" );
+                if (choice <= 10)
+                    System.out.println( "...you have been paralyze" );
+            }*/
+
+        }
     }
 
-}

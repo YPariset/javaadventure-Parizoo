@@ -1,5 +1,9 @@
 package com.company.ItemModel;
 
+import com.company.Character.MonsterType;
+
+import java.util.Random;
+
 public class Arm extends Item {
 
         protected ArmType type;
@@ -13,6 +17,14 @@ public class Arm extends Item {
         public int getAttackPoints() {
             return attackPoints;
         }
+
+    private static final ArmType[] VALUES = ArmType.values();
+    private static final int SIZE = VALUES.length;
+    private static final Random RANDOM = new Random();
+
+    public static ArmType getRandomArmType()  {
+        return VALUES[RANDOM.nextInt(SIZE)];
+    }
 
     }
 

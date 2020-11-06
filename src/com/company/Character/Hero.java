@@ -1,6 +1,5 @@
 package com.company.Character;
 
-
 import com.company.ItemModel.Arm;
 import com.company.ItemModel.ArmType;
 import com.company.Game.CommandPrompt;
@@ -119,11 +118,6 @@ public class Hero extends Character implements Fighter {
      *
      * @throws InterruptedException
      */
-    public void fightMonster() throws InterruptedException{
-        if (this.currentRoom.getMonster()!= null) {
-            new Fight(this.currentRoom.getMonster(),this).goFight();
-        }
-    }
 
     public void takeItem() {
         if(this.currentRoom.getTresor() != null) {
@@ -148,7 +142,6 @@ public class Hero extends Character implements Fighter {
         }
     }*/             ////Voir avec DOM
 
-int n = 0;
 
     /**
      * The function is called when the player wants to hit a Monster in a Room
@@ -163,8 +156,8 @@ int n = 0;
                 if(idArm == 0) {
                     this.attackPoints = 10;
                     new Fight(this.currentRoom.getMonster(), this).goFight();
-                } else if(idArm == 1) { 
-                    n(n+2);
+                } else if(idArm == 1) {
+                    this.attackPoints = 2;  //soon: flaskBonus()
                     new Fight(this.currentRoom.getMonster(), this).goFight();
                 } else if(idArm < this.bag.size()+1 && idArm > 0) {
                     try {
@@ -183,9 +176,6 @@ int n = 0;
         } else {
             System.out.println("There's no monster in this room.");
         }
-    }
-
-    private void n(int i) {
     }
 
     /**

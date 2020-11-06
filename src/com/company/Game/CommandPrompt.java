@@ -24,12 +24,11 @@ public class CommandPrompt {
      */
     public String chooseArm(List<Item> bag) {
 
-        System.out.println("------------------------------\n");
         System.out.println("Which arm do you want for this fight ?\n");
         int compteur = 0;
         System.out.println(compteur + " -> Sword (attackPoints: 10)");
         compteur++;
-        System.out.println(compteur + " -> Water_Flask (attackPoints: n(n+2)");
+        System.out.println(compteur + " -> Water_Flask (attackPoints: n(n+2))");
         for(Item i: bag) {
             if (i.getName().equals("Sword") || i.getName().equals("Water_Flask")) {
                 Arm arm = (Arm) i;
@@ -72,7 +71,7 @@ public class CommandPrompt {
         hero.showHelpMenu();
         System.out.print("> ");
         String command = sc.nextLine();
-        System.out.println("----------------------\n");
+        System.out.println("----------------------------------------\n");
 
         if (command.length() == 0) {
             System.out.println("You can put 'go *number of the door' or 'search'");
