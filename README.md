@@ -20,7 +20,7 @@ Good luck, and don't forget:          Something wait for you if you survive 🎁
 
 ∙ Restriction arm choosed compared to monster
 
-∙ Add bonus damage on Flask_Water attak 
+∙ Add bonus damage on Flask_Water attack 
 
 
 -----------------------------------------------------------------------------------------------------------------------
