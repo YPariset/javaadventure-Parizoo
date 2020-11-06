@@ -12,7 +12,7 @@ Good luck, and don't forget:          Something wait for you if you survive 🎁
 -----------------------------------------------------------------------------------------------------------------------
 
 
-ROADMAP
+☞ ROADMAP
 
 ∙ Implement Paralized state (method already created)
 
