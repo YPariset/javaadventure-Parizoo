@@ -108,17 +108,26 @@ public class DungeonDisplay {
     public void createClassicMap(int level) {
 
         Monster randomMonster = new Monster(Monster.getRandomMonster());
+        Monster randomMonster1 = new Monster(Monster.getRandomMonster());
+        Monster randomMonster2 = new Monster(Monster.getRandomMonster());
+        Monster randomMonster3 = new Monster(Monster.getRandomMonster());
+        Monster randomMonster4 = new Monster(Monster.getRandomMonster());
+
+        Monster barbarian = new Monster(MonsterType.BARBARIAN);
+        Monster sorcerer = new Monster(MonsterType.SORCERER);
 
         Item tresor = new Item("*** - The tresor of God Parizoo - ***","That contains all the happiness that your need in your life");
 
         if (level == 1) {
-            Room room0 = new EntranceRoom(0, randomMonster);
+
+            Room room0 = new EntranceRoom(0, null);
             Room room1 = new NormalRoom(1, randomMonster);
-            Room room2 = new NormalRoom(2, randomMonster);
-            Room room3 = new NormalRoom(3, randomMonster);
-            Room room4 = new NormalRoom(4, randomMonster);
-            Room room5 = new NormalRoom(5, randomMonster);
+            Room room2 = new NormalRoom(2, randomMonster1);
+            Room room3 = new NormalRoom(3, randomMonster2);
+            Room room4 = new NormalRoom(4, randomMonster3);
+            Room room5 = new NormalRoom(5, randomMonster4);
             room5.setTresor(tresor);
+
 
             this.dungeonMap.put(0, room0);
             this.dungeonMap.put(1, room1);
@@ -126,6 +135,7 @@ public class DungeonDisplay {
             this.dungeonMap.put(3, room3);
             this.dungeonMap.put(4, room4);
             this.dungeonMap.put(5, room5);
+
 
 
             room0.getDoors().put(room1.getId(), room1);

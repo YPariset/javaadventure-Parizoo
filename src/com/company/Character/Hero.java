@@ -19,7 +19,7 @@ public class Hero extends Character implements Fighter {
 
 
     public Hero(String name, Room currentRoom, ArmType arm, ArmType arm2) {
-        super(100, ArmType.SWORD.getAttackPoints());
+        super(300, ArmType.SWORD.getAttackPoints());
         this.name = name;
         this.currentRoom = currentRoom;
         this.bag = new ArrayList<Item>();
