@@ -22,6 +22,7 @@ public class CommandPrompt {
      * @param bag the item's list of the player
      * @return answer
      */
+
     public String chooseArm(List<Item> bag) {
 
         System.out.println("Which arm do you want for this fight ?\n");

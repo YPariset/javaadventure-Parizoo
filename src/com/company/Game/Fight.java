@@ -30,7 +30,7 @@ public class Fight {
             }
         }
         if (this.hero.isAlive() & !this.monster.isAlive()) {
-            System.out.println("\nCongratulations ! You beat the monster and win \n");
+            System.out.println("\nCongratulations ! You already beat the monster and win \n");
 
         }
         if (!this.hero.isAlive() & this.monster.isAlive()) {

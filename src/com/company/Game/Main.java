@@ -1,6 +1,5 @@
 package com.company.Game;
 
-import com.company.Game.CommandPrompt;
 import com.company.ItemModel.ArmType;
 import com.company.Character.Hero;
 import com.company.Environment.Dungeon;

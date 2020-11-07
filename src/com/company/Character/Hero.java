@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class Hero extends Character implements Fighter {
+public class Hero extends Character {
     protected String name;
     protected Room currentRoom;
     protected List<Item> bag;
@@ -183,7 +183,7 @@ public class Hero extends Character implements Fighter {
      *
      * @param c the com.company.Character.Character to attack
      */
-    @Override
+    
     public void attack(Character c) {
         System.out.println("------------------\n");
         System.out.println(this.name + " attack the monster with his arm");

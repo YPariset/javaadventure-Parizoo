@@ -4,7 +4,7 @@ import com.company.ItemModel.ArmType;
 
 import java.util.Random;
 
-public class Monster extends Character implements Fighter {
+public class Monster extends Character {
 
     MonsterType type;
 
@@ -13,6 +13,7 @@ public class Monster extends Character implements Fighter {
         this.type = type;
     }
 
+    //To generate a random monster
     private static final MonsterType[] VALUES = MonsterType.values();
     private static final int SIZE = VALUES.length;
     private static final Random RANDOM = new Random();
@@ -26,7 +27,7 @@ public class Monster extends Character implements Fighter {
      *
      * @param c the com.company.Character.Character to attack
      */
-    @Override
+
     public void attack(Character c) {
         System.out.println("------------------\n");
         System.out.println("The monster " + this.type + " attack the player with " + this.type.getNameOfArm());

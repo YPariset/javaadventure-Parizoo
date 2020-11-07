@@ -3,9 +3,6 @@ package com.company.Character;
 
 import com.company.ItemModel.ArmType;
 
-import java.util.Arrays;
-import java.util.Random;
-
 public enum MonsterType {
     BARBARIAN("Barbarian", 50, ArmType.ACE.getAttackPoints(), "an Ace"),
     SORCERER("Sorcerer", 40, ArmType.SORT_LIGHTNING.getAttackPoints(), "a sort of Lightning");

@@ -112,6 +112,7 @@ public class DungeonDisplay {
         }
 
 
+
         Item tresor = new Item("*** - The tresor of God Parizoo - ***","That contains all the happiness that your need in your life");
 
         if (level == 1) {
