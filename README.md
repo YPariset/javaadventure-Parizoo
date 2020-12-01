@@ -1,5 +1,4 @@
 # javaadventure-Parizoo
-javaadventure-Parizoo created by GitHub Classroom
 
 ⚔️ Just a little tips before enter in the Dungeon Master: 
 
